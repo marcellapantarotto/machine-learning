@@ -8,3 +8,4 @@ Setps: <link>https://medium.com/@mjbhobe/mnist-digits-classification-with-keras-
 Packegens needed: <br>
 - ```pip3 install keras```
 - ```pip3 install tensorflow```
+- ``` pip3 install seaborn```
