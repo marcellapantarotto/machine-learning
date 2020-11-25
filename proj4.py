@@ -175,13 +175,16 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 def build_model():
     model = Sequential()
     # add Convolutional layers
-    model.add(Conv2D(filters=32, kernel_size=(3,3), activation='relu', padding='same',
+    model.add(Conv2D(filters=32, kernel_size=(3,3), activation='relu', padding='same',      # camada 1
                      input_shape=(image_height, image_width, num_channels)))
     model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Conv2D(filters=64, kernel_size=(3,3), activation='relu', padding='same'))
+
+    model.add(Conv2D(filters=64, kernel_size=(3,3), activation='relu', padding='same'))     # camada 2
     model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Conv2D(filters=64, kernel_size=(3,3), activation='relu', padding='same'))
+
+    model.add(Conv2D(filters=64, kernel_size=(3,3), activation='relu', padding='same'))     # camada 3
     model.add(MaxPooling2D(pool_size=(2,2)))
+
     model.add(Flatten())
     # Densely connected layers
     model.add(Dense(128, activation='relu'))
