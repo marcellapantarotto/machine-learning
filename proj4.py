@@ -174,6 +174,7 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
 def build_model():
     model = Sequential()
+    
     # add Convolutional layers
     model.add(Conv2D(filters=32, kernel_size=(3,3), activation='relu', padding='same',      # camada 1
                      input_shape=(image_height, image_width, num_channels)))
