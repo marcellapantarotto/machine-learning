@@ -1,3 +1,6 @@
+# Ana Luísa Salvador Alvarez (16/0048036)
+# Marcella Pantarotto (13/0143880)
+
 # imports & tweaks
 import numpy as np
 import matplotlib.pyplot as plt
